@@ -4,3 +4,49 @@ HEADER
 header.header {
 	flex: 0 0 auto;
 }
+
+.header {
+	padding-top: 10px;
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__btn {
+			display: none;
+			width: 170px;
+			border-radius: 23px;
+			padding: 13px;
+			@media (min-width: $md) {
+				display:inline-block;
+			}
+		}
+		.menu {
+			display: none;
+			@media (min-width: $md) {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 555px;
+			}
+			&__link {
+				color: #506270;
+
+			}
+		}
+		.logo {
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 900;
+			color: #15354b;
+			&__img {
+				margin-right: 4px;
+			}
+		}
+		.burger {
+			@media (min-width: $md) {
+				display: none;
+			}
+		}
+	}
+	
+}

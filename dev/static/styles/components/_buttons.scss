@@ -4,7 +4,7 @@ BUTTON STYLES
 
 .btn {
 	display: inline-block;
-
+	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
 
@@ -15,4 +15,9 @@ BUTTON STYLES
 	}
 	&:active {
 	}
+}
+
+.btn--red {
+	background-color: #ef7f65;
+	color: $white;
 }
