@@ -2,79 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>🎉 Find You</title><!--[if IE]>
+    <title>🌐</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="nav"><a class="logo" href="#"><img class="logo__img" src="static/images/logo.svg" alt="logo">Find You  </a>
+      <nav class="nav container">
+        <div class="nav__top"><a class="logo" href="#"><img class="logo__ico" src="images/logo.png" alt="FIND"></a>
+          <button class="hamburger hamburger--spin header__burger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        </div>
+        <div class="nav__bottom">
           <ul class="menu">
-            <li class="menu__list menu__list--dn"><a class="menu__link" href="#">Feature                               </a></li>
-            <li class="menu__list menu__list--dn"><a class="menu__link" href="#">How it Work </a></li>
-            <li class="menu__list menu__list--dn"><a class="menu__link" href="#">Pricing</a></li>
-            <li class="menu__list menu__list--dn"><a class="btn nav__btn btn--red" href="#">Get Start</a></li>
-          </ul><button class="burger">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"/></svg>
-</button>
-        </nav>
-      </div>
+            <li class="menu__item"><a class="menu__link" href="#">Feature</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">How it Work</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
+          </ul><a class="btn btn--r-30 btn--orange header__btn" href="#">Get Start</a>
+        </div>
+      </nav>
     </header>
-    <main>
+    <main class="main">
       <section class="intro">
         <div class="container">
-          <h2 class="intro__title">Be together, whenever.</h2>
-          <p class="intro__text">I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.</p><a class="intro__link btn intro__btn">Try 30 Days Free</a>
+          <div class="intro__inner">
+            <h1 class="intro__title">Be together, whenever.</h1>
+            <p class="intro__text">I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.</p><a class="intro__btn btn btn--r-30" href="#">Try 30 Days Free</a>
+          </div><img class="intro__image" src="images/intro-image.png" alt="">
         </div>
       </section>
-      <section class="features">
-        <div class="container">
-          <ul class="features__list">
-            <li class="features-item"><img class="features-item__img" src="static/images/message.svg" alt="icon">
-              <h4 class="features-item__title">Message System</h4>
-              <p class="features-item__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born a complete account.</p>
-            </li>
-            <li class="features-item"><img class="features-item__img" src="static/images/voice-call.svg" alt="icon">
-              <h4 class="features-item__title">Voice Call</h4>
-              <p class="features-item__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born a complete account.</p>
-            </li>
-            <li class="features-item"><img class="features-item__img" src="static/images/file-share.svg" alt="icon">
-              <h4 class="features-item__title">File Share </h4>
-              <p class="features-item__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born a complete account.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="instruction">
-        <div class="container">
-          <ul class="instruction__list">
-            <li class="instruction-item">
-              <div class="instruction-item__info">
-                <h3 class="instruction-item__title"></h3>
-                <p class="instruction-item__text"></p>
-                <form class="instruction-item__form" action="">
-                  <input type="text"><a class="btn btn--green">Get Started</a>
-                </form>
-              </div>
-              <div class="instruction-item__img"></div>
-            </li>
-            <li class="instruction-item">
-              <div class="instruction-item__info">
-                <h3 class="instruction-item__title"></h3>
-                <p class="instruction-item__text"></p><a class="btn btn--red">Get Started</a>
-              </div>
-              <div class="instruction-item__img"></div>
-            </li>
-          </ul>
+      <section class="download">
+        <div class="container download__inner">
+          <div class="download__column">
+            <h2 class="download__title">You can easily record video call</h2>
+            <p class="download__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</p>
+            <div class="download__bottom download-content">
+              <h3 class="download-content__title">Download App Now?</h3>
+              <ul class="download-content__list">
+                <li class="download-content__item"><a class="download-content__link" href="#"><img class="download-content__ico" src="images/google-download.svg" alt=""></a></li>
+                <li class="download-content__item"><a class="download-content__link" href="#"><img class="download-content__ico" src="images/ios-download.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div><img class="download__preview" src="images/app-preview.png" alt="">
         </div>
       </section>
     </main>
     <footer class="footer"></footer>
-    <script src="static/js/jquery-3.3.1.min.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

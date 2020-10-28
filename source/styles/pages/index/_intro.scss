@@ -1,0 +1,72 @@
+/* ==============================
+INTRO
+ ================================ */
+.intro {
+	@include fluid(
+		"padding-top",
+		(
+			320px: 90px,
+			1200px: 180px,
+		)
+	);
+	@include fluid(
+		"padding-bottom",
+		(
+			320px: 90px,
+			1200px: 180px,
+		)
+	);
+	&__inner {
+		max-width: 820px;
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	&__title {
+		font-family: $avinit;
+		font-weight: 900;
+		@include fluidFontSize(30px, 60px, 320px, 1200px, 30px);
+		@include fluid(
+			"line-height",
+			(
+				320px: 39px,
+				1200px: 78px,
+			)
+		);
+		margin-bottom: 35px;
+	}
+	&__text {
+		@include fluid(
+			"margin-bottom",
+			(
+				320px: 30px,
+				1200px: 60px,
+			)
+		);
+	}
+	&__btn {
+		color: $primary-color;
+		border-color: $primary-color;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		@include fluid(
+			"padding-left",
+			(
+				320px: 37.5px,
+				1200px: 75px,
+			)
+		);
+		@include fluid(
+			"padding-right",
+			(
+				320px: 37.5px,
+				1200px: 75px,
+			)
+		);
+	}
+	&__image {
+		display: block;
+		margin: auto;
+	}
+}

@@ -1,0 +1,67 @@
+/* ==============================
+HEADER
+ ================================ */
+.header {
+	flex: 0 0 auto;
+	@include fluid(
+		"padding-top",
+		(
+			320px: 15px,
+			1200px: 30px,
+		)
+	);
+
+	&__btn {
+		padding-left: 54px;
+		padding-right: 54px;
+	}
+	&__burger {
+		@media (min-width: $md) {
+			display: none;
+		}
+	}
+}
+
+.nav {
+	@media (min-width: $md) {
+		display: flex;
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bottom {
+		text-align: center;
+		padding: 20px;
+		display: none;
+		@media (min-width: $md) {
+			display: flex !important;
+			align-items: center;
+			max-width: 555px;
+			width: 100%;
+			padding: 0;
+			margin-left: auto;
+			justify-content: space-between;
+		}
+		&.is-open {
+			display: block;
+		}
+	}
+}
+
+.menu {
+	margin-bottom: 20px;
+	@media (min-width: $md) {
+		display: flex;
+		margin-bottom: 0;
+		max-width: 320px;
+		width: 100%;
+		justify-content: space-between;
+	}
+	&__link {
+		color: $primary-color;
+		display: block;
+		padding: 5px 0;
+	}
+}
