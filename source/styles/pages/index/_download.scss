@@ -28,6 +28,42 @@
 			width: 100%;
 		}
 	}
+	&__title {
+		font-family: $avenir;
+		color: #15354b;
+		@include fluidFontSize(30px, 60px, 320px, 1200px, 30px);
+		@include fluid(
+			"line-height",
+			(
+				320px: 39px,
+				1200px: 78px,
+			)
+		);
+		@include fluid(
+			"margin-bottom",
+			(
+				320px: 27px,
+				1200px: 55px,
+			)
+		);
+	}
+	&__text {
+		@include fluid(
+			"line-height",
+			(
+				320px: 24px,
+				1200px: 34px,
+			)
+		);
+		@include fluid(
+			"margin-bottom",
+			(
+				320px: 35px,
+				1200px: 70px,
+			)
+		);
+	}
+
 	&__preview {
 		max-width: 250px;
 		margin: auto;
@@ -55,4 +91,48 @@
 			right: -90px;
 		}
 	}
+	.download-content{
+		
+		margin-bottom: 20px;
+		@media (min-width: $lg) {
+			max-width: 650px;
+			width: 100%;
+			margin: auto;
+		}
+		@media (min-width: $sm) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0;
+		}
+		&__title {
+			margin-bottom: 10px;
+			font-size: 28px;
+			color: #15354b;
+			@include fluid(
+			"line-height",
+			(
+				320px: 24px,
+				1200px: 56px,
+			)
+		);
+		}
+		&__list {
+			max-width: 300px;
+			width: 100%;
+			margin: auto;
+			@media (min-width: $sm) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 0;
+			}
+		}
+		&__item {
+			margin-bottom: 10px;
+			@media (min-width: $sm) {
+				margin: 0;
+			}
+		}
+	}	
 }

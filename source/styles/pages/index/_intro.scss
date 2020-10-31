@@ -24,7 +24,7 @@ INTRO
 		margin-bottom: 50px;
 	}
 	&__title {
-		font-family: $avinit;
+		font-family: $avenir;
 		font-weight: 900;
 		@include fluidFontSize(30px, 60px, 320px, 1200px, 30px);
 		@include fluid(
