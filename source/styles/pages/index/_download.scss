@@ -94,15 +94,16 @@
 	.download-content{
 		
 		margin-bottom: 20px;
-		@media (min-width: $lg) {
-			max-width: 650px;
-			width: 100%;
-			margin: auto;
-		}
+		
 		@media (min-width: $sm) {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			max-width: 650px;
+			width: 100%;
+			margin: auto;
+		}
+		@media (min-width: $lg) {
 			margin: 0;
 		}
 		&__title {
