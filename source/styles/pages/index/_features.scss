@@ -1,0 +1,70 @@
+.features {
+    position: relative;
+    background-color: #eff8ff;
+    @include fluid(
+			"padding-top",
+			(
+				320px: 50px,
+				1200px: 100px,
+			)
+        );
+        @include fluid(
+			"padding-bottom",
+			(
+				320px: 50px,
+				1200px: 100px,
+			)
+        );
+        &__bg {
+            display: none;
+            @media (min-width: $xxl) {
+                display: block;
+                position: absolute;
+                top: -25px;
+                @include fluid(
+                    "left",
+                    (
+                        1400px: 20px,
+                        1800px: 180px,
+                    )
+        );
+            }
+        }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 350px;
+        width: 100%;
+        // margin-right: 20px;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__ico {
+        @include fluid(
+			"margin-bottom",
+			(
+				320px: 20px,
+				1200px: 40px,
+			)
+		);
+    }
+    &__title {
+        color: #15354b;
+        @include fluidFontSize(24px, 28px, 320px, 1200px, 24px);
+        font-size: 28px;
+        @include fluid(
+			"margin-bottom",
+			(
+				320px: 15px,
+				1200px: 30px,
+			)
+		);
+    }
+    &__text {
+
+    }
+}
