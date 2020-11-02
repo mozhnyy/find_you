@@ -65,6 +65,12 @@
 		);
     }
     &__text {
-
+        @include fluid(
+			"line-height",
+			(
+				320px: 24px,
+				1200px: 32px,
+			)
+		);
     }
 }
