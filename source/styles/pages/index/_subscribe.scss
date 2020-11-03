@@ -1,0 +1,53 @@
+.subscribe {
+    @media (min-width: $xl) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @include fluid(
+			"padding-top",
+			(
+				320px: 30px,
+				1200px: 160px,
+			)
+        );
+        padding-bottom: 30px;
+}
+.subscribe__inner {
+    max-width: 818px;
+    width: 100%;
+}
+.subscribe__title {
+    color: #15354b;
+    font-family: $avenir;
+    @include fluidFontSize(24px, 40px, 320px, 1200px, 24px);
+    @include fluid(
+			"line-height",
+			(
+				320px: 28px,
+				1200px: 56px,
+			)
+        );
+        @include fluid(
+			"margin-bottom",
+			(
+				320px: 20px,
+				1200px: 40px,
+			)
+        );
+}
+.subscribe__text {
+    @include fluid(
+			"line-height",
+			(
+				320px: 24px,
+				1200px: 34px,
+			)
+        );
+    @media (max-width: $xl) {
+        margin-bottom: 20px;
+    }
+}
+.subscribe__btn {
+    min-width: 270px;
+}

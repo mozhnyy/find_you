@@ -54,6 +54,7 @@
     }
     &__title {
         color: #15354b;
+        font-family: $avenir;
         @include fluidFontSize(24px, 28px, 320px, 1200px, 24px);
         font-size: 28px;
         @include fluid(
